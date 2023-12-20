@@ -7,7 +7,6 @@ orgs.newOrg('jakartaee') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
     description: "",
-    members_can_change_project_visibility: false,
     name: "Jakarta EE",
     packages_containers_internal: false,
     packages_containers_public: false,
