@@ -8,8 +8,6 @@ orgs.newOrg('jakartaee') {
     dependency_graph_enabled_for_new_repositories: false,
     description: "",
     name: "Jakarta EE",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,
@@ -824,7 +822,7 @@ orgs.newOrg('jakartaee') {
     },
     orgs.newRepo('jaxb-api') {
       allow_merge_commit: true,
-      allow_update_branch: false,
+      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
@@ -1446,9 +1444,14 @@ orgs.newOrg('jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/es",
+      homepage: "https://projects.eclipse.org/projects/ee4j.security",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
+      topics: [
+        "authentication",
+        "authorization",
+        "security"
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
