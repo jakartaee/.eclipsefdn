@@ -1348,7 +1348,6 @@ orgs.newOrg('jakartaee') {
     orgs.newRepo('rest') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta RESTful Web Services",
@@ -1393,7 +1392,7 @@ orgs.newOrg('jakartaee') {
         },
       ],
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
         },
       ],
