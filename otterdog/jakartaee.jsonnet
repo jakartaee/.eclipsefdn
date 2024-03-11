@@ -822,7 +822,6 @@ orgs.newOrg('jakartaee') {
     },
     orgs.newRepo('jaxb-api') {
       allow_merge_commit: true,
-      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
@@ -1248,7 +1247,6 @@ orgs.newOrg('jakartaee') {
     },
     orgs.newRepo('persistence') {
       allow_merge_commit: true,
-      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
@@ -1447,7 +1445,7 @@ orgs.newOrg('jakartaee') {
       homepage: "https://projects.eclipse.org/projects/ee4j.security",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
-      topics: [
+      topics+: [
         "authentication",
         "authorization",
         "security"
