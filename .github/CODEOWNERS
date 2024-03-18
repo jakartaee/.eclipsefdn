@@ -2,4 +2,4 @@
 *             @jakartaee/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @jakartaee/eclipsefdn-security @jakartaee/eclipsefdn-releng
+/otterdog/**  @jakartaee/eclipsefdn-security
