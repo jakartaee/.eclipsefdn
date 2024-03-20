@@ -840,14 +840,6 @@ orgs.newOrg('jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
-          required_approving_review_count: 1,
-        },
-        orgs.newBranchProtectionRule('EE4J_8') {
-          required_approving_review_count: 1,
-        },
-      ],
     },
     orgs.newRepo('jaxb-api') {
       allow_merge_commit: true,
@@ -860,14 +852,6 @@ orgs.newOrg('jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
-          required_approving_review_count: 1,
-        },
-        orgs.newBranchProtectionRule('EE4J_8') {
-          required_approving_review_count: 1,
-        },
-      ],
     },
     orgs.newRepo('jaxb-tck') {
       allow_merge_commit: true,
@@ -1452,14 +1436,6 @@ orgs.newOrg('jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
-          required_approving_review_count: 1,
-        },
-        orgs.newBranchProtectionRule('EE4J_8') {
-          required_approving_review_count: 1,
-        },
-      ],
     },
     orgs.newRepo('security') {
       allow_merge_commit: true,
