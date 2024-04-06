@@ -1162,7 +1162,6 @@ orgs.newOrg('jakartaee') {
     orgs.newRepo('mvc') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta MVC Specification",
@@ -1178,7 +1177,6 @@ orgs.newOrg('jakartaee') {
     orgs.newRepo('mvc-tck') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "MVC tck",
