@@ -3,12 +3,8 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('jakartaee') {
   settings+: {
     blog: "https://jakarta.ee",
-    dependabot_alerts_enabled_for_new_repositories: false,
-    dependabot_security_updates_enabled_for_new_repositories: false,
-    dependency_graph_enabled_for_new_repositories: false,
     description: "",
     name: "Jakarta EE",
-    two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
