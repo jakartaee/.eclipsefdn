@@ -19,8 +19,6 @@ orgs.newOrg('jakartaee') {
       dependabot_alerts_enabled: false,
       description: "Community Health files",
       has_issues: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -32,8 +30,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "Jakarta EE Specification Process",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -50,8 +46,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/jaspic",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -85,8 +79,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -117,8 +109,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "The Jakarta Batch project produces the Batch Specification and API.",
       homepage: "https://projects.eclipse.org/projects/ee4j.batch",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -132,8 +122,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "The Jakarta Batch TCK repository contains the Batch TCK.",
       homepage: "https://projects.eclipse.org/projects/ee4j.batch",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -148,8 +136,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "main",
       gh_pages_source_path: "/docs",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -206,8 +192,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_path: "/docs",
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -247,8 +231,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "Jakarta EE collateral",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -265,8 +247,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/ca",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -296,8 +276,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "Eclipse Project for Concurrency Utilities",
       homepage: "https://projects.eclipse.org/projects/ee4j.cu",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -322,8 +300,6 @@ orgs.newOrg('jakartaee') {
       dependabot_alerts_enabled: false,
       description: "Jakartaconfig project",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -337,8 +313,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "Jakarta Connectors",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -362,8 +336,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "Data-API",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -384,8 +356,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "Jakarta Enterprise Beans",
       homepage: "https://eclipse.org/ee4j/ejb",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -428,8 +398,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/el",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -460,8 +428,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "Jakarta Faces",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "gui",
         "mvc",
@@ -478,8 +444,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -491,8 +455,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -504,8 +466,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -522,8 +482,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/interceptors",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -556,8 +514,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_build_type: "workflow",
       has_discussions: true,
       homepage: "https://jakartaee.github.io/jaf-api/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -578,8 +534,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "JAF TCK ",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -591,8 +545,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       description: "Jakarta EE is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.",
       homepage: "https://jakarta.ee",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "hugo",
         "webdev"
@@ -632,8 +584,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       description: "Welcome to the blog home of open source, cloud native Java innovation! Read posts from our global community on Jakarta EE news, technologies, best practices, and compatible products.",
       homepage: "https://jakartablogs.ee",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "planetplanet",
         "webdev"
@@ -665,8 +615,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "jakartaee-api",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -688,8 +636,6 @@ orgs.newOrg('jakartaee') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://jakartaee.github.io/jakartaee-documentation/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -715,8 +661,6 @@ orgs.newOrg('jakartaee') {
       has_projects: false,
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -737,8 +681,6 @@ orgs.newOrg('jakartaee') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -753,8 +695,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://jakartaee.github.io/jakartaee-documentation/jakartaee-tutorial/current/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -785,8 +725,6 @@ orgs.newOrg('jakartaee') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://jakartaone.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "hugo",
         "webdev"
@@ -829,8 +767,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "JAX-WS API (Eclipse Project for JAX-WS)",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -841,8 +777,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -854,8 +788,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -870,8 +802,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "master",
       gh_pages_source_path: "/docs",
       homepage: "https://jakartaee.github.io/jekyll-theme-jakarta-ee/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jekyll-theme",
         "webdev"
@@ -918,8 +848,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse-ee4j.github.io/jsonb-api/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -969,8 +897,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/jsonp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1011,8 +937,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "JWS API (Eclipse Project for JAX-WS)",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1040,8 +964,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_build_type: "workflow",
       has_discussions: true,
       homepage: "https://jakartaee.github.io/mail-api",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jakartaee",
         "java"
@@ -1072,8 +994,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1086,8 +1006,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Javamail TCK",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1107,8 +1025,6 @@ orgs.newOrg('jakartaee') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1132,8 +1048,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/messaging",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1148,8 +1062,6 @@ orgs.newOrg('jakartaee') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1163,8 +1075,6 @@ orgs.newOrg('jakartaee') {
       description: "Jakarta MVC Specification",
       has_discussions: true,
       homepage: "https://projects.eclipse.org/projects/ee4j.mvc",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1176,8 +1086,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "MVC tck",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1190,8 +1098,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "The specification in Jakarta EE to help Jakarta EE developers create enterprise-grade applications using Java® and NoSQL technologies. ",
       homepage: "https://projects.eclipse.org/projects/ee4j.nosql",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "jakarta",
@@ -1214,8 +1120,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "Jakarta Server Pages",
       homepage: "http://eclipse.org/ee4j/jsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1259,8 +1163,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_build_type: "workflow",
       has_discussions: true,
       homepage: "https://jakartaee.github.io/persistence/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1310,8 +1212,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://jakartaee.github.io/platform/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1337,8 +1237,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1357,8 +1255,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1408,8 +1304,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: " Jakarta RPC specification project",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1423,8 +1317,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "SOAP with Attachments API for Java (SAAJ) API (Eclipse Project for JAX-WS)",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1441,8 +1333,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://projects.eclipse.org/projects/ee4j.security",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "authentication",
         "authorization",
@@ -1491,8 +1381,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "security-examples",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1509,8 +1397,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse.org/ee4j/servlet",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1556,8 +1442,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       description: "Documentation base for Specification Committee guides and process to be published at jakarta.ee via Hugo and git submodules",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1570,8 +1454,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       description: "Repository for Jenkins jobs to sign binaries and various automation tools pertaining to specification committee work",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1584,8 +1466,6 @@ orgs.newOrg('jakartaee') {
       delete_branch_on_merge: false,
       description: "Documentation base for Specification pages be published at jakarta.ee via Hugo and git submodules",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1600,8 +1480,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1633,8 +1511,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://jakartaee.github.io/transactions/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "api",
         "jakarta-ee",
@@ -1682,8 +1558,6 @@ orgs.newOrg('jakartaee') {
       dependabot_security_updates_enabled: true,
       description: "Jakarta Validation",
       homepage: "http://beanvalidation.org",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "bean-validation",
         "java"
@@ -1746,8 +1620,6 @@ orgs.newOrg('jakartaee') {
       description: "Jakarta Validation spec document",
       has_wiki: false,
       homepage: "http://beanvalidation.org",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1801,8 +1673,6 @@ orgs.newOrg('jakartaee') {
       description: "Jakarta Validation TCK",
       has_wiki: false,
       homepage: "http://validator.hibernate.org",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1864,8 +1734,6 @@ orgs.newOrg('jakartaee') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://projects.eclipse.org/projects/ee4j.websocket",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1906,8 +1774,6 @@ orgs.newOrg('jakartaee') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
