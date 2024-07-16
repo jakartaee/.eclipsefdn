@@ -1216,6 +1216,13 @@ orgs.newOrg('jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 0,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+      ],
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
