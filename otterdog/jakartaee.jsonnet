@@ -716,7 +716,6 @@ orgs.newOrg('jakartaee') {
     },
     orgs.newRepo('jakartaone.org') {
       allow_update_branch: false,
-      default_branch: "master",
       delete_branch_on_merge: false,
       description: "JakartaOne Live is a one day virtual conference for developers and technical business leaders that brings insights into the current state and future of Jakarta EE and related technologies focused on developing cloud-native Java applications. ",
       gh_pages_build_type: "legacy",
@@ -748,7 +747,7 @@ orgs.newOrg('jakartaee') {
         },
       ],
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
