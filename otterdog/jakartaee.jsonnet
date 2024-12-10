@@ -677,6 +677,18 @@ orgs.newOrg('jakartaee') {
         },
       ],
     },
+    orgs.newRepo('jakartaee-future-directions') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Jakartaee Future Directions Interest Group",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('jakartaee-schemas') {
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -1229,7 +1241,6 @@ orgs.newOrg('jakartaee') {
     orgs.newRepo('platform-tck') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakartaee-tck",
