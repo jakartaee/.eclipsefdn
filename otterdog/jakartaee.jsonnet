@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('jakartaee') {
+orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
   settings+: {
     blog: "https://jakarta.ee",
     description: "",
