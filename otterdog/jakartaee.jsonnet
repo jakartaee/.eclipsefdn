@@ -10,6 +10,67 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       default_workflow_permissions: "write",
     },
   },
+  teams+: [
+    orgs.newTeam('collateral-admin') {
+      members+: [
+        "eclipsewebmaster"
+      ],
+    },
+    orgs.newTeam('community-jakarta.ee-website') {
+      description: "List of community committers for the Jakarta.ee website.",
+      members+: [
+        "Emily-Jiang",
+        "kazumura"
+      ],
+    },
+    orgs.newTeam('eclipsefdn-staff') {
+      members+: [
+        "PaulWhite-Eclipse",
+        "ZahraFazli",
+        "annejacko",
+        "autumnfound",
+        "chrisguindon",
+        "croundy",
+        "eclipsewebmaster",
+        "ericpoirier",
+        "fdesbiens",
+        "fredg02",
+        "gaelblondelle",
+        "jph152",
+        "mbarbero",
+        "meKokabi",
+        "oliviergoulet5",
+        "paulbuck",
+        "phkrief",
+        "shanda-eclipse",
+        "waynebeaton"
+      ],
+      privacy: "secret",
+    },
+    orgs.newTeam('eclipsefdn-webdev') {
+      description: "Web development team.",
+      members+: [
+        "autumnfound",
+        "chrisguindon",
+        "eclipsewebmaster",
+        "ericpoirier",
+        "ivargrimstad",
+        "oliviergoulet5",
+        "webdev-bot"
+      ],
+      privacy: "secret",
+    },
+    orgs.newTeam('eclipsefdn-webmaster') {
+      description: "Eclipse webmaster team",
+      members+: [
+        "chrisguindon",
+        "eclipsewebmaster",
+        "fredg02",
+        "mbarbero"
+      ],
+      privacy: "secret",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('.github') {
       allow_merge_commit: true,
