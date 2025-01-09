@@ -70,6 +70,66 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
       privacy: "secret",
     },
+    orgs.newTeam('jakartaee-community-china') {
+      members+: [
+        "chrisguindon",
+        "laliwa"
+      ],
+      privacy: "secret",
+    },
+    orgs.newTeam('jakartaee-workshops') {
+      description: "Private group for access to Jakarta EE workshop related repos",
+      members+: [
+        "TanjaObradovic",
+        "eclipsewebmaster",
+        "ivargrimstad"
+      ],
+      privacy: "secret",
+    },
+    orgs.newTeam('jakartaone-community') {
+      members+: [
+        "HillmerCh",
+        "TanjaObradovic",
+        "annejacko",
+        "cesarhernandezgt",
+        "chrisguindon",
+        "eldermoraes",
+        "ericpoirier",
+        "kazumura",
+        "otaviojava",
+        "paulbuck"
+      ],
+      privacy: "secret",
+    },
+    orgs.newTeam('jekyll-theme-jakarta-ee') {
+      members+: [
+        "chrisguindon",
+        "jgallimore"
+      ],
+      privacy: "secret",
+    },
+    orgs.newTeam('specification-committee') {
+      description: "Jakarta EE Specification Committee",
+      members+: [
+        "Emily-Jiang",
+        "Pandrex247",
+        "cesarhernandezgt",
+        "dblevins",
+        "edbratt",
+        "ivargrimstad",
+        "jeanouii",
+        "kazumura",
+        "keilw",
+        "m0mus",
+        "marceloancelmo",
+        "paulbuck",
+        "quiram",
+        "smillidge",
+        "tjwatson",
+        "waynebeaton"
+      ],
+      privacy: "secret",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
