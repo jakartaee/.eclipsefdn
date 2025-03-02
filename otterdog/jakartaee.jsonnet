@@ -166,7 +166,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/jaspic",
+      homepage: "https://projects.eclipse.org/projects/ee4j.jaspic",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -367,7 +367,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/ca",
+      homepage: "https://projects.eclipse.org/projects/ee4j.ca",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -476,7 +476,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Enterprise Beans",
-      homepage: "https://eclipse.org/ee4j/ejb",
+      homepage: "https://projects.eclipse.org/projects/ee4j.ejb",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -518,7 +518,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/el",
+      homepage: "https://projects.eclipse.org/projects/ee4j.el",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -602,7 +602,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/interceptors",
+      homepage: "https://projects.eclipse.org/projects/ee4j.interceptors",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1028,7 +1028,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/jsonp",
+      homepage: "https://projects.eclipse.org/projects/ee4j.jsonp",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1179,7 +1179,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/messaging",
+      homepage: "https://projects.eclipse.org/projects/ee4j.messaging",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1251,7 +1251,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Server Pages",
-      homepage: "http://eclipse.org/ee4j/jsp",
+      homepage: "https://projects.eclipse.org/projects/ee4j.jsp",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1527,7 +1527,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse.org/ee4j/servlet",
+      homepage: "https://projects.eclipse.org/projects/ee4j.servlet",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
