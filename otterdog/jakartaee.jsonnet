@@ -1380,7 +1380,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      description: "EE4J Query",
+      description: "Jakarta Query",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
