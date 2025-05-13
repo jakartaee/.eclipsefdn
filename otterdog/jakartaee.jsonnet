@@ -27,7 +27,6 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       members+: [
         "PaulWhite-Eclipse",
         "ZahraFazli",
-        "annejacko",
         "autumnfound",
         "chrisguindon",
         "croundy",
@@ -36,6 +35,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         "fdesbiens",
         "fredg02",
         "gaelblondelle",
+        "heurtematte",
         "jph152",
         "mbarbero",
         "meKokabi",
@@ -1375,6 +1375,18 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
+    },
+    orgs.newRepo('query') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "EE4J Query",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('rest') {
       allow_merge_commit: true,
