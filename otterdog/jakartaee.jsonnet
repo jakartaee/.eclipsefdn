@@ -35,6 +35,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         "fdesbiens",
         "fredg02",
         "gaelblondelle",
+        "gnugomez",
         "heurtematte",
         "jph152",
         "mbarbero",
@@ -54,6 +55,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         "chrisguindon",
         "eclipsewebmaster",
         "ericpoirier",
+        "gnugomez",
         "ivargrimstad",
         "oliviergoulet5",
         "webdev-bot"
@@ -1375,6 +1377,30 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
+    },
+    orgs.newRepo('portlet') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Portlet",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
+    orgs.newRepo('portlet-bridge') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Portlet Bridge",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('query') {
       allow_merge_commit: true,
