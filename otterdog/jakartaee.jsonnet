@@ -1711,7 +1711,10 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
-          required_approving_review_count: 1,
+          bypass_pull_request_allowances+: [
+            "@jakartaee/ee4j-jta-committers"
+          ],
+          required_approving_review_count: 0,
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
