@@ -431,7 +431,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('connectors') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Connectors",
@@ -446,7 +446,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
