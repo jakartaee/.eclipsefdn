@@ -1774,6 +1774,12 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
             "pull_request"
           ],
         },
+        orgs.newRepoWebhook('https://ci.eclipse.org/validation/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -1827,6 +1833,12 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
           ],
           secret: "********",
         },
+		orgs.newRepoWebhook('https://ci.eclipse.org/validation/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -1885,6 +1897,12 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
             "pull_request"
           ],
         },
+		orgs.newRepoWebhook('https://ci.eclipse.org/validation/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
