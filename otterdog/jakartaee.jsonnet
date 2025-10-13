@@ -1782,6 +1782,24 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
+        orgs.newBranchProtectionRule('1.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('3.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta-release') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
       ],
     },
     orgs.newRepo('validation-spec') {
@@ -1830,6 +1848,12 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta-release') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
@@ -1888,6 +1912,42 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('3.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('2.0') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta8-release') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta-release') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('1.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('1.0') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
