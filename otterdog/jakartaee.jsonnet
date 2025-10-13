@@ -1643,7 +1643,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('tags') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       gh_pages_build_type: "legacy",
@@ -1654,7 +1654,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
