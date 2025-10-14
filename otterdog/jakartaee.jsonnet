@@ -306,12 +306,12 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('cdi-tck') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "CDI TCK",
       gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "master",
+      gh_pages_source_branch: "main",
       gh_pages_source_path: "/docs",
       has_wiki: false,
       homepage: "",
@@ -431,7 +431,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('connectors') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Connectors",
@@ -446,7 +446,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
@@ -1643,7 +1643,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('tags') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       gh_pages_build_type: "legacy",
@@ -1654,7 +1654,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
@@ -1774,9 +1774,33 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
             "pull_request"
           ],
         },
+        orgs.newRepoWebhook('https://ci.eclipse.org/validation/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('1.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('3.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta-release') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
@@ -1827,9 +1851,21 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
           ],
           secret: "********",
         },
+		orgs.newRepoWebhook('https://ci.eclipse.org/validation/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta-release') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
@@ -1885,9 +1921,51 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
             "pull_request"
           ],
         },
+		orgs.newRepoWebhook('https://ci.eclipse.org/validation/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('3.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('2.0') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta8-release') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('jakarta-release') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('1.1') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('1.0') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
