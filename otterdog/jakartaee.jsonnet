@@ -1291,7 +1291,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     },
     orgs.newRepo('persistence') {
       allow_merge_commit: true,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       gh_pages_build_type: "workflow",
@@ -1318,14 +1318,62 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
           ],
           secret: "********",
         },
+        orgs.newRepoWebhook('https://ci.eclipse.org/jpa/github-webhook/') {
+		  events+: [
+			"push",
+			"pull_request"
+		  ],
+		}
       ],
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
-          required_approving_review_count: 1,
-        },
-        orgs.newBranchProtectionRule('EE4J_8') {
-          required_approving_review_count: 1,
-        },
+	 	orgs.newBranchProtectionRule('main') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('master') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('EE4J_8') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('EE10') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('3.2-3.2.0') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('3.1-3.1.0') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('2.2.2') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
+		orgs.newBranchProtectionRule('2.2.1') {
+		  required_approving_review_count: null,
+		  requires_pull_request: false,
+		  requires_status_checks: false,
+		  requires_strict_status_checks: true,
+		},
       ],
       environments: [
         orgs.newEnvironment('github-pages') {
