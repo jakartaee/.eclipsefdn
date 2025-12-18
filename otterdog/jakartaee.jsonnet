@@ -1378,7 +1378,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
-            "master"
+            "main"
           ],
           deployment_branch_policy: "selected",
         },
