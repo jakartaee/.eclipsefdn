@@ -1772,7 +1772,8 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
     },
     orgs.newRepo('validation') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_squash_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
@@ -1857,7 +1858,8 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
     },
     orgs.newRepo('validation-spec') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_squash_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
@@ -1922,7 +1924,8 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
     },
     orgs.newRepo('validation-tck') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_squash_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
