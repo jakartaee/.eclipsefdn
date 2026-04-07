@@ -630,7 +630,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('jaf-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Activation Specification project",
@@ -644,7 +644,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
-            "master"
+            "main"
           ],
           deployment_branch_policy: "selected",
         },
@@ -653,7 +653,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('jaf-tck') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "JAF TCK ",
@@ -896,7 +896,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('jax-ws-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "JAX-WS API (Eclipse Project for JAX-WS)",
@@ -908,7 +908,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     },
     orgs.newRepo('jaxb-api') {
       allow_merge_commit: true,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       web_commit_signoff_required: false,
@@ -919,7 +919,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('jaxb-tck') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       web_commit_signoff_required: false,
@@ -1066,7 +1066,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('jws-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "JWS API (Eclipse Project for JAX-WS)",
@@ -1091,7 +1091,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('mail-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Mail Specification project",
@@ -1125,7 +1125,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('mail-spec') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       web_commit_signoff_required: false,
@@ -1136,7 +1136,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('mail-tck') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Javamail TCK",
@@ -1529,7 +1529,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('saaj-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "SOAP with Attachments API for Java (SAAJ) API (Eclipse Project for JAX-WS)",
