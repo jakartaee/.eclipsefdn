@@ -137,6 +137,51 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         default_workflow_permissions: "write",
       },
     },
+    orgs.newRepo("agentic-ai") {
+      description: "Jakarta Agentic Artificial Intelligence",
+      homepage: "",
+
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+
+      web_commit_signoff_required: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+
+      topics: [
+        "agentic-ai",
+        "artificial-intelligence",
+        "jakartaee",
+        "java",
+      ],
+
+      workflows+: {
+        default_workflow_permissions: "write",
+        fork_pr_approval_policy: "first_time_contributors",
+      },
+    },
+    orgs.newRepo("agentic-ai-website") {
+      description: "Project website for Jakarta Agentic Artificial Intelligence",
+
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+
+      web_commit_signoff_required: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+
+      custom_properties+: {
+        eclipse_project: "ee4j.agentic-ai",
+      },
+
+      workflows+: {
+        default_workflow_permissions: "write",
+        fork_pr_approval_policy: "first_time_contributors",
+      },
+    },
+
     orgs.newRepo('authentication') {
       allow_merge_commit: true,
       allow_update_branch: false,
