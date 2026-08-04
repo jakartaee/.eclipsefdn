@@ -24,28 +24,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       ],
     },
     orgs.newTeam('eclipsefdn-staff') {
-      members+: [
-        "PaulWhite-Eclipse",
-        "ZahraFazli",
-        "autumnfound",
-        "chrisguindon",
-        "croundy",
-        "eclipsewebmaster",
-        "ericpoirier",
-        "fdesbiens",
-        "fredg02",
-        "gaelblondelle",
-        "gnugomez",
-        "heurtematte",
-        "jph152",
-        "mbarbero",
-        "meKokabi",
-        "oliviergoulet5",
-        "paulbuck",
-        "phkrief",
-        "shanda-eclipse",
-        "waynebeaton"
-      ],
+      skip_members: true,
       privacy: "secret",
     },
     orgs.newTeam('eclipsefdn-webdev') {
@@ -1076,7 +1055,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
