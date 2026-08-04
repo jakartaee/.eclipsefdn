@@ -974,14 +974,14 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('jsonb-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta JSON Binding",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://eclipse-ee4j.github.io/jsonb-api/",
+      homepage: "https://jakartaee.github.io/jsonb-api/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1005,7 +1005,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         },
       ],
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
