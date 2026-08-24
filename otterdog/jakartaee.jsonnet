@@ -570,7 +570,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     orgs.newRepo('faces') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Jakarta Faces",
@@ -584,6 +584,26 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('5.0') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('4.0') {
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+      ],
     },
     orgs.newRepo('inject') {
       allow_merge_commit: true,
