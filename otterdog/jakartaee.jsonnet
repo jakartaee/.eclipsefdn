@@ -36,7 +36,6 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         "ericpoirier",
         "gnugomez",
         "ivargrimstad",
-        "oliviergoulet5",
         "webdev-bot"
       ],
       privacy: "secret",
