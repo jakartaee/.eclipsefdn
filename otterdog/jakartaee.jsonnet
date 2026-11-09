@@ -135,6 +135,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      team_permissions+: {
+        "specification-committee": "push",
+      },
     },
     orgs.newRepo("agentic-ai") {
       description: "Jakarta Agentic Artificial Intelligence",
@@ -380,6 +383,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
+      },
+      team_permissions+: {
+        "collateral-admin": "push",
       },
     },
     orgs.newRepo('common-annotations-api') {
@@ -719,6 +725,11 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      team_permissions+: {
+        "community-jakarta-ee-website": "push",
+        "eclipsefdn-staff": "triage",
+        "eclipsefdn-webdev": "push",
+      },
       webhooks: [
         orgs.newRepoWebhook('https://notify.travis-ci.org') {
           events+: [
@@ -757,6 +768,11 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
+      },
+      team_permissions+: {
+        "eclipsefdn-staff": "triage",
+        "eclipsefdn-webdev": "push",
+        "eclipsefdn-webmaster": "admin",
       },
       webhooks: [
         orgs.newRepoWebhook('https://foundation.eclipse.org/ci/webdev/github-webhook/') {
@@ -910,6 +926,11 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      team_permissions+: {
+        "eclipsefdn-staff": "triage",
+        "eclipsefdn-webdev": "push",
+        "jakartaone-community": "push",
+      },
       webhooks: [
         orgs.newRepoWebhook('https://notify.travis-ci.org') {
           events+: [
@@ -986,6 +1007,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
+      },
+      team_permissions+: {
+        "jekyll-theme-jakarta-ee": "push",
       },
       webhooks: [
         orgs.newRepoWebhook('https://notify.travis-ci.org') {
@@ -1706,6 +1730,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      team_permissions+: {
+        "specification-committee": "push",
+      },
     },
     orgs.newRepo('specification-tools') {
       allow_merge_commit: true,
@@ -1718,6 +1745,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      team_permissions+: {
+        "specification-committee": "push",
+      },
     },
     orgs.newRepo('specifications') {
       allow_merge_commit: true,
@@ -1729,6 +1759,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
+      },
+      team_permissions+: {
+        "specification-committee": "push",
       },
     },
     orgs.newRepo('tags') {
@@ -2122,6 +2155,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      team_permissions+: {
+        "jakartaee-workshops": "push",
+      },
     },
     orgs.newRepo('workshop-trainer') {
       allow_forking: false,
@@ -2134,6 +2170,9 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
+      },
+      team_permissions+: {
+        "jakartaee-workshops": "push",
       },
     },
   ],
