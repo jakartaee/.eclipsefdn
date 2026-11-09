@@ -150,6 +150,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
       web_commit_signoff_required: false,
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
+      gh_pages_build_type: "workflow",
 
       topics: [
         "agentic-ai",
@@ -162,6 +163,15 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         default_workflow_permissions: "write",
         fork_pr_approval_policy: "first_time_contributors",
       },
+      webhooks: [
+        orgs.newRepoWebhook('https://ci.eclipse.org/agentic-ai/github-webhook/') {
+          content_type: "json",
+          events+: [
+            "pull_request",
+            "push"
+          ],
+        },
+      ],
     },
     orgs.newRepo("agentic-ai-website") {
       description: "Project website for Jakarta Agentic Artificial Intelligence",
@@ -742,6 +752,18 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
             "push",
             "repository"
           ],
+        },
+        orgs.newRepoWebhook('https://foundation.eclipse.org/ci/webdev/github-webhook/') {
+          content_type: "json",
+          events+: [
+            "create",
+            "delete",
+            "pull_request",
+            "pull_request_review",
+            "pull_request_review_comment",
+            "push"
+          ],
+          secret: "********",
         },
       ],
       branch_protection_rules: [
