@@ -36,6 +36,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         "ericpoirier",
         "gnugomez",
         "ivargrimstad",
+        "jjmerchante",
         "webdev-bot"
       ],
       privacy: "secret",
@@ -141,7 +142,7 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
     },
     orgs.newRepo("agentic-ai") {
       description: "Jakarta Agentic Artificial Intelligence",
-      homepage: "",
+      homepage: "https://jakartaee.github.io/agentic-ai/",
 
       allow_merge_commit: true,
       allow_update_branch: false,
