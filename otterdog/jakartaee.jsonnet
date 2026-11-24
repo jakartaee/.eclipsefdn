@@ -493,6 +493,17 @@ orgs.newOrg('ee4j.jakartaee-platform', 'jakartaee') {
         },
       ],
     },
+    orgs.newRepo('crac') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      default_branch: "main",
+      delete_branch_on_merge: false,
+      description: "Coordinated Restore at Checkpoint project",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('data') {
       allow_merge_commit: true,
       allow_update_branch: false,
